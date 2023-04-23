@@ -1,0 +1,42 @@
+@font-face {
+    font-family: light;
+    src: url(../../../fonts/OpenSans_Condensed-Light.ttf);
+    
+}
+
+@media (max-width:320px) {
+    .header-icon {
+        max-height: 25px;
+        
+    }
+}
+
+.container {  
+   display: flex;
+   justify-content: space-between;
+
+    
+  }  
+
+.header {
+
+    &-right {
+        padding-right: 24px;
+    }
+
+    &-icon {
+        height: 103px;
+        
+        
+    }
+
+    &-expenses {
+    font-size: calc(12px + 9 * (100vw /  1280));
+    font-family: light, sans-serif;
+    color: #FFE600;
+    letter-spacing: 0.5px;
+    }
+}
+
+
+
