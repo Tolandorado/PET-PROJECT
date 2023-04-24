@@ -1,41 +1,50 @@
+
 @font-face {
-    font-family: light;
+    font-family: standart;
     src: url(../../../fonts/OpenSans_Condensed-Light.ttf);
     
 }
 
 @media (max-width:320px) {
     .header-icon {
-        max-height: 25px;
-        
+        max-height: 25px;      
     }
 }
 
 .container {  
    display: flex;
    justify-content: space-between;
-
-    
+   align-items: center;
   }  
 
 .header {
-
-    &-right {
-        padding-right: 24px;
-    }
+    width: 100%;
+    padding: 24px 33px 24px 0;
+    background-color: #000000;
 
     &-icon {
-        height: 103px;
-        
+        height: 103px;  
+    }
+    &-load {
+        vertical-align: middle;
+    }
+    &-right {
+              
+       display: flex;
+       justify-content: center;
+       align-items: center;
+            
+        gap: 4em;
         
     }
+}
 
-    &-expenses {
+.loginLoaded {
+    color: white;
+    font-family: standart, sans-serif;
     font-size: calc(12px + 9 * (100vw /  1280));
-    font-family: light, sans-serif;
-    color: #FFE600;
-    letter-spacing: 0.5px;
-    }
+    margin: 0 2em 0 10px;
+    vertical-align: middle;
 }
 
 
